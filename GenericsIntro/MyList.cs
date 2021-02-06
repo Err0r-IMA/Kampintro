@@ -7,10 +7,12 @@ namespace GenericsIntro
     class MyList<T>
     {
         T[] items;
+        
         //constructer
         public MyList()
         {
-            items = new T[0]; 
+            items = new T[0];
+            
         }
         public void Add(T item)
         {

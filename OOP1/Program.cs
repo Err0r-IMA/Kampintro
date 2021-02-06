@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OOP1
 {
@@ -6,6 +7,9 @@ namespace OOP1
     {
         static void Main(string[] args)
         {
+           
+            
+            
             Product product1 = new Product();
             product1.Id = 1;
             product1.CategoryId = 2;
@@ -16,13 +20,15 @@ namespace OOP1
             Product product2 = new Product { Id = 2,CategoryId =5, 
                 UnitsInStock = 5 , ProductName="Kalem" , UnitPrice = 35};
 
+
             //PascalCase     //camelCase
             //case sensitive
-           ProductManager productManager = new ProductManager();
+            ProductManager productManager = new ProductManager();
             productManager.Add(product1);
             Console.WriteLine(product1.ProductName);
+            List<Product> products1 = new List<Product>();
+            products1.Add(product1);
 
-          
             //int,double,bool... değer tip 
             //diziler,class,abstract,clas,interface...referans tip
             //ref out
