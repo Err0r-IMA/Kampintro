@@ -43,7 +43,7 @@ namespace ClassIntro
             
             
             
-            Console.WriteLine("Hello World!");
+            
         }
     }
     class Kurs
